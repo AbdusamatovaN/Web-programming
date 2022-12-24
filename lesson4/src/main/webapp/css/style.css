@@ -1,0 +1,277 @@
+:root {
+    font-size: 16px;
+    font-family: Verdana, sans-serif;
+    color: rgb(34, 34, 34);
+
+    --border-color: rgb(185, 185, 185);
+    --arrow-color: #888888;;
+    --boder: 1px solid var(--border-color);
+    --border-radius: 6px;
+    --caption-color: #3B5998;
+    --datatable-color: #E1E1E1;
+    --datatable-dark-cell-color: #f8f8f8;
+}
+
+html {
+    min-width: 800px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+header {
+    position: relative;
+}
+
+header .languages {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+header .enter-or-register-box {
+    position: absolute;
+    top: calc(24px + 0.5rem);
+    right: 0;
+}
+
+header nav {
+    border: var(--boder);
+    border-radius: var(--border-radius);
+    margin: 0.5rem 0 2rem 0;
+}
+
+header nav ul {
+    padding: 0;
+    margin: 1rem;
+}
+
+header nav ul li {
+    display: inline;
+    padding: 0;
+    margin: 0;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: black;
+    font-family: Arial, sans-serif;
+    margin-right: 1rem;
+}
+
+header nav ul li a.under {
+    border-bottom: 2px solid #3B5998;
+}
+
+.middle {
+    display: flow-root;
+}
+
+aside {
+    float: right;
+    width: 20rem;
+}
+
+aside section {
+    border: var(--boder);
+    border-top-left-radius: var(--border-radius);
+    border-top-right-radius: var(--border-radius);
+    margin-bottom: 1rem;
+}
+
+aside section .header {
+    border-bottom: var(--boder);
+    padding: 0.25rem;
+    font-weight: bold;
+    color: var(--caption-color);
+}
+
+aside section .header:before {
+    content: "→ ";
+    font-size: 1.1rem;
+}
+
+aside section .body {
+    padding: 0.25rem;
+}
+
+aside section .footer {
+    border-top: var(--boder);
+    padding: 0.25rem;
+    text-align: right;
+    font-size: 0.8rem;
+}
+
+aside section .footer a:after {
+    content: " →";
+}
+
+.user {
+    border: var(--boder);
+    border-radius: var(--border-radius);
+    padding-top: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+    width: calc(100% - 1rem);
+    overflow: hidden;
+}
+
+.user .info {
+    padding-left: 1rem;
+    display: inline-block;
+}
+
+.user h2 {
+    margin-top: 0;
+}
+
+.per {
+    float: right;
+}
+
+.error h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.arrow-next {
+    text-decoration-color: var(--arrow-color);
+}
+
+.arrow-prev {
+    text-decoration-color: var(--arrow-color);
+}
+
+main {
+    margin-right: 21rem;
+}
+
+/* article */
+main article {
+    margin-bottom: 2em;
+}
+
+main article .title {
+    color: var(--caption-color);
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+main article .information {
+    margin-top: 0.25rem;
+    font-size: 0.85rem;
+    color: #888;
+}
+
+main article .body {
+    border-left: 4px solid var(--border-color);
+    padding-left: 0.75rem;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+main article .body p:last-child {
+    margin: 0;
+}
+
+main article .attachment {
+    padding: 0;
+    margin: 0.5rem 0 0 0;
+}
+
+main article .attachment li {
+    list-style: none;
+    padding: 0.25rem 20px;
+    margin: 0;
+    background: url("../img/paperclip-16x16.png") 0 2px no-repeat;
+    font-size: 0.75rem;
+    color: #888;
+}
+
+main article .footer {
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    padding: 0.1rem;
+    margin-top: 0.25rem;
+}
+
+main article .footer .left {
+    float: left;
+    padding-left: 0.5rem;
+}
+
+main article .footer .left img {
+    position: relative;
+    top: 5px;
+}
+
+main article .footer .right img {
+    position: relative;
+    margin-left: 0.5rem;
+    top: 2px;
+}
+
+main article .footer .right {
+    float: right;
+    font-size: 0.85rem;
+    line-height: 2rem;
+    padding-right: 0.5rem;
+}
+
+main article .footer .positive-score {
+    color: green;
+    font-weight: bold;
+    line-height: 1.75rem;
+}
+
+/* datatable */
+.datatable table {
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+.datatable .caption {
+    background-color: var(--datatable-color);
+    font-size: 0.9rem;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding: 0.25rem 0.5rem;
+}
+
+.datatable td, .datatable th {
+    border: 1px solid var(--datatable-color);
+    padding: 0.5em;
+    font-size: 0.8rem;
+}
+
+.datatable tbody tr:nth-child(2n-1) {
+    background-color: var(--datatable-dark-cell-color);
+}
+
+.userlink {
+    font-family: helvetica neue,Helvetica,Arial,sans-serif;
+    text-decoration: none!important;
+    font-weight: 700;
+}
+
+.on-class-RED {
+    color: red;
+}
+
+.on-class-GREEN {
+    color: green;
+}
+
+.on-class-BLUE {
+    color: blue;
+}
+
+footer {
+    margin-top: 3rem;
+    padding-top: 1rem;
+    border-top: var(--boder);
+    text-align: center;
+}
